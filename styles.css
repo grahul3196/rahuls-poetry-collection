@@ -54,6 +54,10 @@ nav a:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+section {
+    margin-bottom: 3rem;
+}
+
 .book-images {
     display: flex;
     justify-content: space-around;
@@ -61,7 +65,7 @@ nav a:hover {
 }
 
 .book-images img {
-    width: 30%;
+    width: 45%;
     max-width: 200px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -77,6 +81,21 @@ h2 {
 p {
     font-size: 1.1rem;
     line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    background-color: #4a69bd;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: #1e3799;
 }
 
 footer {
