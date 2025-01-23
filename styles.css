@@ -1,3 +1,13 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background: url('background.jpg') no-repeat center center fixed;
@@ -5,25 +15,28 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    animation: fadeIn 1s ease-out;
 }
 
 header {
-    background-color: #4a69bd;
+    background-color: rgba(74, 105, 189, 0.9);
     color: white;
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.animated-title {
     font-family: 'Merriweather', serif;
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    animation: slideIn 1s ease-out;
 }
 
-header p {
+.animated-subtitle {
     font-size: 1.2rem;
     opacity: 0.9;
+    animation: slideIn 1.5s ease-out;
 }
 
 nav {
@@ -52,55 +65,84 @@ nav a:hover {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-out;
 }
 
-.book-images {
+.book-carousel {
     display: flex;
     justify-content: space-around;
     margin-bottom: 2rem;
+    position: relative;
 }
 
-.book-images img {
+.book-carousel img {
     width: 30%;
     max-width: 200px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-h2 {
+.book-carousel img.active {
+    opacity: 1;
+}
+
+.section-title {
     font-family: 'Merriweather', serif;
     font-size: 2rem;
     color: #4a69bd;
     margin-bottom: 1rem;
+    animation: slideIn 2s ease-out;
 }
 
-p {
+.description {
     font-size: 1.1rem;
     line-height: 1.6;
+    animation: fadeIn 2.5s ease-out;
 }
 
-footer {
-    text-align: center;
-    padding: 0.25rem;
-    background-color: #4a69bd;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.featured-content {
+    margin-top: 2rem;
+    animation: fadeIn 3s ease-out;
 }
 
-/* New styles for articles page */
-.article-list {
+.featured-content h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: #1e3799;
+    margin-bottom: 1rem;
+}
+
+.featured-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.featured-content li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.featured-content li:hover {
+    transform: translateY(-5px);
+}
+
+.poem-list, .article-list {
     margin-top: 2rem;
 }
 
-article {
+.poem-list article, .article-list article {
     margin-bottom: 2rem;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 1rem;
 }
 
-article:last-child {
+.poem-list article:last-child, .article-list article:last-child {
     border-bottom: none;
 }
 
@@ -130,5 +172,26 @@ h3 {
 
 .read-more:hover {
     background-color: #1e3799;
+}
+
+.about-image {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-image img {
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 0.25rem;
+    background-color: #4a69bd;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
