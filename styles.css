@@ -54,10 +54,6 @@ nav a:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-section {
-    margin-bottom: 3rem;
-}
-
 .book-images {
     display: flex;
     justify-content: space-around;
@@ -65,7 +61,7 @@ section {
 }
 
 .book-images img {
-    width: 45%;
+    width: 30%;
     max-width: 200px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -83,21 +79,6 @@ p {
     line-height: 1.6;
 }
 
-.button {
-    display: inline-block;
-    background-color: #4a69bd;
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin-top: 1rem;
-}
-
-.button:hover {
-    background-color: #1e3799;
-}
-
 footer {
     text-align: center;
     padding: 0.25rem;
@@ -107,3 +88,47 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* New styles for articles page */
+.article-list {
+    margin-top: 2rem;
+}
+
+article {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1rem;
+}
+
+article:last-child {
+    border-bottom: none;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: #1e3799;
+    margin-bottom: 0.5rem;
+}
+
+.article-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #4a69bd;
+    color: white;
+    text-decoration: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #1e3799;
+}
+
