@@ -11,6 +11,12 @@ header {
     padding: 20px;
     background-color: #007bff;
     color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 nav {
@@ -25,6 +31,7 @@ nav a {
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
@@ -38,14 +45,68 @@ nav a:hover {
 .section-title {
     text-align: center;
     margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
 }
 
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.book-carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.book-carousel img {
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+
+.book-carousel img.active {
+    display: block;
+}
+
+.featured-content {
+    text-align: center;
+}
+
+.featured-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.featured-content li {
+    margin-bottom: 10px;
+}
+
+.poem-list article,
 .article-list article {
     background-color: white;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.poem-list article:hover,
+.article-list article:hover {
+    transform: scale(1.05);
+}
+
+.poem {
+    font-family: 'Baloo 2', cursive;
+    white-space: pre-wrap;
+    line-height: 1.6;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
 }
 
 .read-more {
@@ -53,10 +114,24 @@ nav a:hover {
     margin-top: 10px;
     color: #007bff;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .read-more:hover {
+    color: #0056b3;
     text-decoration: underline;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 footer {
@@ -81,8 +156,21 @@ footer {
         padding: 10px;
     }
 
+    .book-carousel {
+        flex-direction: column;
+    }
+
+    .poem-list article,
     .article-list article {
         padding: 10px;
+    }
+
+    .poem {
+        padding: 10px;
+    }
+
+    .about-image {
+        flex-direction: column;
     }
 }
 
@@ -95,10 +183,18 @@ footer {
         font-size: 1.5em;
     }
 
+    .description {
+        font-size: 1em;
+    }
+
+    .poem-list article,
     .article-list article {
         padding: 8px;
     }
-}
 
+    .poem {
+        padding: 8px;
+    }
+}
 
 
