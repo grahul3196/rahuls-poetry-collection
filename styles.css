@@ -9,9 +9,14 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #007bff;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header-bg.jpg') no-repeat center center/cover;
     color: white;
     animation: fadeIn 2s ease-in-out;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
 }
 
 @keyframes fadeIn {
@@ -58,16 +63,23 @@ nav a:hover {
     justify-content: center;
     overflow: hidden;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .book-carousel img {
     max-width: 100%;
     height: auto;
     display: none;
+    transition: opacity 1s;
 }
 
 .book-carousel img.active {
     display: block;
+    opacity: 1;
+}
+
+.book-carousel img:not(.active) {
+    opacity: 0;
 }
 
 .featured-content {
@@ -81,6 +93,11 @@ nav a:hover {
 
 .featured-content li {
     margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.featured-content li:hover {
+    transform: scale(1.05);
 }
 
 .poem-list article,
