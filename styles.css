@@ -152,7 +152,7 @@ button:hover {
     transition: color 0.3s;
 }
 
-social-media a:hover {
+.social-media a:hover {
     color: #0056b3;
 }
 
