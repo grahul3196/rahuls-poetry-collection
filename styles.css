@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Glegoo', 'Kalam', 'Rozha One', 'Modak', sans-serif;
+    font-family: 'Glegoo', 'Kalam', 'Rozha One', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -92,7 +92,7 @@ button:hover {
 .section-title {
     text-align: center;
     margin-bottom: 20px;
-    font-family: 'Modak', cursive;
+    font-family: 'Rozha One', serif;
     animation: slideIn 1s ease-in-out;
 }
 
