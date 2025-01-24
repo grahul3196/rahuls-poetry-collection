@@ -10,8 +10,10 @@
 </head>
 <body>
     <header>
-        <h1 class="animated-title">राहुलच्या लेखांचे स्वागत</h1>
-        <p class="animated-subtitle">राहुल गजकोश यांनी लिहिलेल्या विचारप्रवर्तक लेखांचा आनंद घ्या.</p>
+        <div class="header-content">
+            <h1 class="animated-title">राहुलच्या लेखांचे स्वागत</h1>
+            <p class="animated-subtitle">राहुल गजकोश यांनी लिहिलेल्या विचारप्रवर्तक लेखांचा आनंद घ्या.</p>
+        </div>
     </header>
     <nav>
         <a href="index.html"><i class="fas fa-home"></i> मुख्यपृष्ठ</a>
@@ -19,15 +21,19 @@
         <a href="articles.html"><i class="fas fa-book-open"></i> लेख</a>
         <a href="about.html"><i class="fas fa-user"></i> माझ्याबद्दल</a>
     </nav>
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search...">
+        <button onclick="searchContent()">Search</button>
+    </div>
     <div class="container">
-        <h2 class="section-title">लेख संग्रह</h2>
+        <h2 class="section-title scroll-in">लेख संग्रह</h2>
         <div class="article-list">
-            <article>
+            <article class="scroll-in content-item">
                 <h3>लेख १: विज्ञान आणि तंत्रज्ञानाचे महत्त्व</h3>
                 <p>या लेखात आपण विज्ञान आणि तंत्रज्ञानाच्या महत्त्वावर चर्चा करू...</p>
                 <a href="#" class="read-more">वाचा</a>
             </article>
-            <article>
+            <article class="scroll-in content-item">
                 <h3>लेख २: समाजातील बदल</h3>
                 <p>समाजातील बदल आणि त्याचे परिणाम या लेखात आपण पाहू...</p>
                 <a href="#" class="read-more">वाचा</a>
@@ -36,6 +42,7 @@
     </div>
     <footer>
         <p>© 2025 राहुल गजकोश. सर्व हक्क राखीव.</p>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
     </footer>
     <script src="script.js"></script>
 </body>
