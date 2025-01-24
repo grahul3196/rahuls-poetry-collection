@@ -197,7 +197,7 @@ footer {
 /* Poem and Article Styles */
 .poem, .article {
     font-family: 'Kalam', cursive;
-    font-size: 24px; /* Increased font size */
+    font-size: 20px; /* Increased font size */
     line-height: 1.8; /* Adjusted line height */
     color: #333;
     margin: 20px 0;
