@@ -75,15 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.searchContent = searchContent;
 
-    // Newsletter subscription
-    const newsletterForm = document.getElementById('newsletter-form');
-    newsletterForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const email = document.getElementById('newsletter-email').value;
-        alert(`Thank you for subscribing with ${email}!`);
-        newsletterForm.reset();
-    });
-
     // Contact form
     const contactForm = document.getElementById('contact-form');
     contactForm.addEventListener('submit', (e) => {
@@ -101,5 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.toggle('dark-mode');
     });
 });
+
 
 
