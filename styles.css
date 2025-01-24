@@ -44,7 +44,7 @@ nav a:hover {
 }
 
 #dark-mode-toggle {
-    padding: 5px 5px;
+    padding: 5px 10px;
     background-color: #007bff;
     color: white;
     border: none;
@@ -194,10 +194,10 @@ footer {
     color: white;
 }
 
-/* Poem Styles */
-.poem {
+/* Poem and Article Styles */
+.poem, .article {
     font-family: 'Kalam', cursive;
-    font-size: 22px; /* Increased font size */
+    font-size: 24px; /* Increased font size */
     line-height: 1.8; /* Adjusted line height */
     color: #333;
     margin: 20px 0;
@@ -250,7 +250,7 @@ body.dark-mode #dark-mode-toggle:hover {
     background-color: #cccccc;
 }
 
-body.dark-mode .poem {
+body.dark-mode .poem, body.dark-mode .article {
     background-color: #1e1e1e;
     color: #ffffff;
     border-left: 4px solid #ffffff;
@@ -280,7 +280,7 @@ body.dark-mode .poem {
         padding: 10px;
     }
 
-    .poem {
+    .poem, .article {
         padding: 10px;
     }
 
@@ -318,7 +318,7 @@ body.dark-mode .poem {
         padding: 8px;
     }
 
-    .poem {
+    .poem, .article {
         padding: 8px;
     }
 
