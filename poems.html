@@ -6,11 +6,14 @@
     <title>राहुलच्या कविता</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&family=Baloo+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 <body>
     <header>
-        <h1 class="animated-title">कवी मनाचा मी</h1>
-        <p class="animated-subtitle">या राहुलच्या कविता वाचूया</p>
+        <div class="header-content">
+            <h1 class="animated-title">कवी मनाचा मी</h1>
+            <p class="animated-subtitle">या राहुलच्या कविता वाचूया</p>
+        </div>
     </header>
     <nav>
         <a href="index.html"><i class="fas fa-home"></i> मुख्यपृष्ठ</a>
@@ -18,10 +21,14 @@
         <a href="articles.html"><i class="fas fa-book-open"></i> लेख</a>
         <a href="about.html"><i class="fas fa-user"></i> माझ्याबद्दल</a>
     </nav>
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search...">
+        <button onclick="searchContent()">Search</button>
+    </div>
     <div class="container">
-        <h2 class="section-title">कवितेच्या सागरात</h2>
+        <h2 class="section-title scroll-in">कवितेच्या सागरात</h2>
         <div class="poem-list">
-            <article>
+            <article class="scroll-in content-item">
                 <h3>आभासी जग</h3>
                 <pre class="poem">
 इंस्टावरचे प्रेम किती खरे मानायचे,
@@ -36,8 +43,7 @@
                 </pre>
                 <a href="#" class="read-more">वाचा</a>
             </article>
-            
-            <article>
+            <article class="scroll-in content-item">
                 <h3>नशीबाचे बंध</h3>
                 <pre class="poem">
 नशीबात तू माझ्या,
@@ -47,8 +53,7 @@
                 </pre>
                 <a href="#" class="read-more">वाचा</a>
             </article>
-            
-            <article>
+            <article class="scroll-in content-item">
                 <h3>लाजरा फोटो</h3>
                 <pre class="poem">
 फोटो तुझा मी,
@@ -58,8 +63,7 @@
                 </pre>
                 <a href="#" class="read-more">वाचा</a>
             </article>
-            
-            <article>
+            <article class="scroll-in content-item">
                 <h3>क्षणिक सौंदर्य</h3>
                 <pre class="poem">
 सौंदर्य तीच, माझ्या नजरेत दिसेल,
@@ -68,8 +72,7 @@
                 </pre>
                 <a href="#" class="read-more">वाचा</a>
             </article>
-            
-            <article>
+            <article class="scroll-in content-item">
                 <h3>अळवावरचे पाणी</h3>
                 <pre class="poem">
 दृष्ट न लागू कोणाची,
@@ -79,8 +82,7 @@
                 </pre>
                 <a href="#" class="read-more">वाचा</a>
             </article>
-            
-            <article>
+            <article class="scroll-in content-item">
                 <h3>उड़ान की तैयारी</h3>
                 <pre class="poem">
 उड़ान की तैयारी करो,
@@ -90,8 +92,7 @@
                 </pre>
                 <a href="#" class="read-more">वाचा</a>
             </article>
-            
-            <article>
+            <article class="scroll-in content-item">
                 <h3>प्रेमाचे अवघड मार्ग</h3>
                 <pre class="poem">
 इतकं ही अवघड नसतं प्रेम करणं,
@@ -102,8 +103,7 @@
                 </pre>
                 <a href="#" class="read-more">वाचा</a>
             </article>
-            
-            <article>
+            <article class="scroll-in content-item">
                 <h3>आठवणींचा प्याला</h3>
                 <pre class="poem">
 अनोळखी रस्ते आता ओळखीचे झाले,
@@ -121,7 +121,9 @@
     </div>
     <footer>
         <p>© 2025 राहुल गजकोश. सर्व हक्क राखीव.</p>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
