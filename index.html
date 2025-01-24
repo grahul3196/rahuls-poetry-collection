@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poeticlenss</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&family=Baloo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Hind:wght@400;700&family=Mukta:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" defer></script>
     <script src="script.js" defer></script>
@@ -21,8 +21,11 @@
         <a href="poems.html"><i class="fas fa-feather-alt"></i> कविता</a>
         <a href="articles.html"><i class="fas fa-book-open"></i> लेख</a>
         <a href="about.html"><i class="fas fa-user"></i> माझ्याबद्दल</a>
-        <button id="dark-mode-toggle">Toggle Dark Mode</button>
     </nav>
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search...">
+        <button onclick="searchContent()">Search</button>
+    </div>
     <div class="container">
         <div class="book-carousel">
             <img src="book1.jpg" alt="कविता पुस्तक 1" class="active">
@@ -55,8 +58,8 @@
     </div>
     <footer>
         <p>© 2025 Poeticlenss </p>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
     </footer>
 </body>
 </html>
-
 
