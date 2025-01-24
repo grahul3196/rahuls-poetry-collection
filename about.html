@@ -10,8 +10,10 @@
 </head>
 <body>
     <header>
-        <h1 class="animated-title">माझ्याबद्दल</h1>
-        <p class="animated-subtitle">राहुल गजाकोश यांच्याबद्दल अधिक जाणून घ्या.</p>
+        <div class="header-content">
+            <h1 class="animated-title">माझ्याबद्दल</h1>
+            <p class="animated-subtitle">राहुल गजाकोश यांच्याबद्दल अधिक जाणून घ्या.</p>
+        </div>
     </header>
     <nav>
         <a href="index.html"><i class="fas fa-home"></i> मुख्यपृष्ठ</a>
@@ -19,15 +21,20 @@
         <a href="articles.html"><i class="fas fa-book-open"></i> लेख</a>
         <a href="about.html"><i class="fas fa-user"></i> माझ्याबद्दल</a>
     </nav>
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search...">
+        <button onclick="searchContent()">Search</button>
+    </div>
     <div class="container">
-        <h2 class="section-title">राहुल गजाकोश</h2>
-        <p class="description">मी राहुल गजाकोश, एक लेखक आणि कवी. माझ्या कवितांमध्ये आणि लेखांमध्ये, मी जीवनाच्या विविध पैलूंवर चर्चा करतो. माझ्या लेखनाच्या माध्यमातून, मी वाचकांना विचार करण्यास आणि त्यांच्या जीवनात सकारात्मक बदल घडवण्यास प्रेरित करतो.</p>
-        <div class="about-image">
-            <img src="rahul.jpg" alt="राहुल गजकोश">
+        <h2 class="section-title scroll-in">राहुल गजाकोश</h2>
+        <p class="description scroll-in">मी राहुल गजाकोश, एक लेखक आणि कवी. माझ्या कवितांमध्ये आणि लेखांमध्ये, मी जीवनाच्या विविध पैलूंवर चर्चा करतो. माझ्या लेखनाच्या माध्यमातून, मी वाचकांना विचार करण्यास आणि त्यांच्या जीवनात सकारात्मक बदल घडवण्यास प्रेरित करतो.</p>
+        <div class="about-image scroll-in">
+            <img src="rahul.jpg" alt="राहुल गजाकोश">
         </div>
     </div>
     <footer>
         <p>© 2025 Poeticlenss.</p>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
     </footer>
     <script src="script.js"></script>
 </body>
