@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans Devanagari', 'Hind', 'Mukta', 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -296,4 +296,3 @@ body.dark-mode #dark-mode-toggle:hover {
         border-radius: 10px;
     }
 }
-
